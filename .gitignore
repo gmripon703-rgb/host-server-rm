@@ -1,8 +1,33 @@
+# Dependencies
 node_modules/
-build/
+
+# Build output
 dist/
-coverage/
-.DS_Store
-*.log
-.env*
+build/
+.next/
+out/
+
+# Environment / secrets
+.env
+.env.*
 !.env.example
+
+# Credentials
+credentials/
+secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
