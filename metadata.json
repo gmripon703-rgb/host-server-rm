@@ -1,0 +1,6 @@
+{
+  "name": "NexusControl - Private Cloud Admin & Storage Panel",
+  "description": "Production-ready private web hosting and storage control panel with Google Drive & multi-provider storage abstraction, secure RBAC authentication, AI asset management, and zero-VPS deployment.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

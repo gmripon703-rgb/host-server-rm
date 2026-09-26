@@ -1,0 +1,23 @@
+[
+  {
+    "id": "usr_admin_001",
+    "email": "admin@nexus.internal",
+    "name": "System Administrator",
+    "role": "ADMIN",
+    "isActive": true,
+    "createdAt": "2026-09-26T18:32:22.116Z",
+    "passwordHash": "d38738abee677125fb954b9989d7ef59db2dbada8c1e635eb377d902acf28f5bdf8992cec8b74a5e0ff878801dd8b3a4cd0ebb77942d6471c93be55d0e63f3fc",
+    "salt": "5f044fc92b521f89f1f411745eb79f6d",
+    "lastLoginAt": "2026-09-26T18:35:23.197Z"
+  },
+  {
+    "id": "usr_member_002",
+    "email": "engineer@nexus.internal",
+    "name": "Team Engineer",
+    "role": "USER",
+    "isActive": true,
+    "createdAt": "2026-09-26T18:32:22.116Z",
+    "passwordHash": "d3489333ec179e9d64e0f0a2c238592a604786f9e6cee509687950c2882e2c8c5b879ee72c88887a9eafe80ffcea526224f498734fc6c9949e1418a555714903",
+    "salt": "802aae2e34c871c1177fb5987ad75367"
+  }
+]

@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  nexus-control:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nexus_control_panel
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - ACTIVE_STORAGE_PROVIDER=local-disk
+      - JWT_SECRET=change_this_to_a_random_secure_secret_in_prod
+      - DEFAULT_ADMIN_EMAIL=admin@nexus.internal
+      - DEFAULT_ADMIN_PASSWORD=Admin@Nexus2026!
+      # Google Drive Credentials (uncomment when ready):
+      # - GOOGLE_SERVICE_ACCOUNT_EMAIL=...
+      # - GOOGLE_PRIVATE_KEY=...
+    volumes:
+      - nexus_data:/app/data
+
+volumes:
+  nexus_data:
+    driver: local
